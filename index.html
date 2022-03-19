@@ -1,0 +1,350 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaña de Vacunación </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        section{
+            padding: 60px 0;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <!-- Navigation bar  -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-xxl">
+        <a href="#intro" class="navbar-brand">
+            <span class="fw-bold text-secondary">
+                Vaccination
+            </span>
+        </a>
+        <!-- toogle button for mobiles navigation  Aria Controls allows to readibility-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navigation Links-->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active text-muted" aria-current="page" href="#database">Database</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#news">News</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#hoax" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Hoax Buster
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">If you have had Covid-19 you do not need the vaccine</a></li>
+                        <li><a class="dropdown-item" href="#">Natural antibodies are better than the vaccine</a></li>
+                        <li><a class="dropdown-item" href="#">I am young so I do not need to be vaccinated</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    
+    <!-- Everthing else goes inside the section -->
+    <section id= "intro" class="bg-light p-3">
+        <div class="container.lg">
+            <!-- here you put the details to align the elements -->
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-center text-md-start">
+                    <h2>
+                        <div class="display-3 ms-5 text-start">Fight Virus with Vaccines</div>
+                        <div class="display-5 ms-5 text-start text-muted">Let's stop this pandemic by killing the virus with a vaccine
+                       
+                        </div>
+                    </h2>
+
+                </div>
+                <!-- Insert Image for initial page -->
+            
+            <div class="col-md-7 text-center d-md-block">
+                <img class="img-fluid" src="/03 - CSS/assets/enfermer azul.png" alt="Vacuntate">
+            </div> 
+            </div>
+        </div>
+
+    <h1 class="display-1"></h1>
+    </section>
+
+
+    <!-- Section for vaccines cards -->
+    <section id="cardvaccines" class="bg-light mt-0">
+        <div class="contrainer-lg">
+            <div class="text-primary text-start ms-5 mb-5">
+                <h3>Schedule your vaccination</h3>
+            </div>
+
+            <div class="row my-2 align-items-center justify-content-center">
+
+                <div class="col-3 col-lg-4 col-xl-3">
+                    <div class="card border-0">
+                        <div class="card-body text-center py-4">
+                            <h6 class="card-title">Location</h6>
+                            <p class="my-2 text-muted fw-bold">Jakarta Utara</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 col-lg-4 col-xl-3">
+                    <div class="card border-0">
+                        <div class="card-body text-center py-4">
+                            <h6 class="card-title">Date</h6>
+                            <p class="my-2 text-muted fw-bold">08 July 2021</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 col-lg-4 col-xl-3">
+                    <div class="card border-0">
+                        <div class="card-body text-center py-4">
+                            <h6 class="card-title">Vaccine Type</h6>
+                            <p class="my-2 text-muted fw-bold">Moderna</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 col-lg-4 col-xl-3">
+                    <div class="card border-0 bg-light">
+                        <div class="card-body text-center py-4">
+                            <a href="#" class="btn btn-primary btn-lg mt-3">Submit</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section for slider -->
+    <section id= "vaccines" class="bg-light">
+        <div class="container">
+            
+            <div id="carouselExampleDark" class="carousel carousel-dark slide bg-light" data-bs-ride="carousel">
+
+                <div class="carousel-inner bg-light">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="/03 - CSS/assets/Astra.png" class="img-fluid center d-block w-10" alt="...">
+
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="/03 - CSS/assets/Sinovac.png" class="img-fluid d-block w-10" alt="...">
+
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="/03 - CSS/assets/pfizer.png" class="img-fluid d-block w-10" alt="...">
+
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="/03 - CSS/assets/moderna.png" class="img-fluid d-block w-10" alt="...">
+
+                  </div>
+
+                </div>
+
+                <div>  
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+
+              </div>
+        </div>
+    </section>
+
+    <!-- Cards for Next Step -->
+
+    <section id= "cardsnext" class="p-3">
+
+        <div class="row my-2 align-items-lg-stretch justify-content-center">
+
+            <div class="col-3 col-lg-4 col-xl-3">
+                <img src="/03 - CSS/assets/minimize.jpeg" class="card-img-top img-fluid" alt="...">
+                <div class="card border-0">
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title text-primary" >Minimizing the spread </h4>
+                        <p class="my-2 text-muted fw-bold">Vaccine has proven to help prevent Coronavirus</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 col-lg-4 col-xl-3">
+                <img src="/03 - CSS/assets/antibod.jpeg" class="card-img-top" alt="...">
+                <div class="card border-0">
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title text-primary">Forming antibodies</h4>
+                        <p class="my-2 text-muted fw-bold">COVID-19 vaccine proven to help shape antibodies</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 col-lg-4 col-xl-3">
+                <img src="/03 - CSS/assets/protect.jpg" class="card-img-top" alt="...">
+                <div class="card border-0">
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title text-primary">Protecting the body</h4>
+                        <p class="my-2 text-muted fw-bold">Benefits are the vaccine helps people</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 col-lg-4 col-xl-3">
+                <img src="/03 - CSS/assets/group.jpeg" class="card-img-top" alt="...">
+                <div class="card border-0">
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title text-primary">Create group immunity</h4>
+                        <p class="my-2 text-muted fw-bold">COVID-19 Vaccination is benefitial for creating herd immunity</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+        <!-- section 3 -->
+        <section id= "preparation" class="bg-light">
+            <div class="container.lg mt-0 me-5">
+                <!-- here you put the details to align the elements -->
+                <div class="row justify-content-center align-items-center">
+
+                    <div class="text-end me-5">
+                        <p class= "fs-1 fw-bold text-primary">Preparation before Vaccine</p> 
+                     </div>
+
+
+                    <div class="col-md-7 text-center d-md-block">
+                        <img class="img-fluid" src="/03 - CSS/assets/chica vacunacion trans.png" alt="Vacuntate">
+                    </div> 
+
+                    <div class="col-md-5 text-center text-md-start">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                  Avoid Alcohol
+                                </button>
+                              </h2>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Alchohol can produce secondary effects that are not desired please avoid before and after your dosis </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                  Avoid Stress
+                                </button>
+                              </h2>
+                              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Stress has a profound impact on the health system, can lower defenses and makes us more vulnerable to COVID-19</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                  Eat Healthy
+                                </button>
+                              </h2>
+                              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">A healthy diet can boost our defenses and help us in the aid against the COVID-19. Drink plenty of water avoid smoking and high saturated fat foods.</div>
+                              </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                  <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    Get enough Sleep
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">A balanced night schedule can help in preventing infection due to COVID-19, and help in recovery in case of an infection as it boost antibodies and the body's response </div>
+                                </div>
+                              </div>
+                            
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="cardvaccines" class="bg-light mt-0">
+            <div class="contrainer-lg">
+                <div class="text-primary text-start ms-5 mb-5">
+                    <h3>Emergency Contact</h3>
+                    <img class="img-fluid" src="/03 - CSS/assets/enfermero.png" alt="Vacuntate">
+                </div>
+    
+                <div class="row my-2 align-items-center justify-content-center">
+    
+                    <div class="col-3 col-lg-4 col-xl-3">
+                        <div class="card border-0">
+                            <div class="card-body text-center py-4">
+                                <h6 class="card-title">Call</h6>
+                                <p class="my-2 text-muted fw-bold">2654141</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-3 col-lg-4 col-xl-3">
+                        <div class="card border-0">
+                            <div class="card-body text-center py-4">
+                                <h6 class="card-title">E-mail</h6>
+                                <p class="my-2 text-muted fw-bold">fefkel@.com</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-3 col-lg-4 col-xl-3">
+                        <div class="card border-0">
+                            <div class="card-body text-center py-4">
+                                <h6 class="card-title">Visit</h6>
+                                <p class="my-2 text-muted fw-bold">Address</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-3 col-lg-4 col-xl-3">
+                        <div class="card border-0 bg-light">
+                            <div class="card-body text-center py-4">
+                                <a href="#" class="btn btn-primary btn-lg mt-3">Contact Now</a>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                </div>
+            </div>
+        </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
